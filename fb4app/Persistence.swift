@@ -13,10 +13,23 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        
+        // Demo data
+        if (false) {
+            for index in 0..<10 {
+                let newItem = Item(context: viewContext)
+                newItem.timestamp = Date()
+                
+                let newScheduleItem = ScheduleItem(context: viewContext)
+                newScheduleItem.timeBegin = "10:15"
+                newScheduleItem.timeEnd = "11:50"
+                newScheduleItem.courseTitle = "Algorithmen und Datenstrukturen " + String(index)
+                newScheduleItem.group = "A-C"
+                newScheduleItem.room = "B.2.21"
+                newScheduleItem.teacher = "Dr. Mustermann"
+            }
         }
+        
         do {
             try viewContext.save()
         } catch {

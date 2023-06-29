@@ -9,12 +9,18 @@ import SwiftUI
 
 @main
 struct fb4appApp: App {
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onAppear {
+                    for (key, value) in UserDefaults.standard.dictionaryRepresentation() {
+                        print("\(key) = \(value) \n")
+                    }
+                }
         }
     }
 }

@@ -1,0 +1,40 @@
+PODS:
+  - AEXML-CU (5.0.0)
+  - Alamofire (4.9.1)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ReactiveSwift (6.7.0)
+  - SwiftECP (5.0.0):
+    - AEXML-CU (~> 5.0.0)
+    - Alamofire (~> 4.5)
+    - ReactiveSwift (~> 6.0)
+    - XCGLogger (~> 7.0)
+  - XCGLogger (7.0.1):
+    - XCGLogger/Core (= 7.0.1)
+  - XCGLogger/Core (7.0.1):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - SwiftECP
+
+SPEC REPOS:
+  trunk:
+    - AEXML-CU
+    - Alamofire
+    - ObjcExceptionBridging
+    - ReactiveSwift
+    - SwiftECP
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  AEXML-CU: e8c621b92b990df457c30f43bd2f53a2fd1b258c
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ReactiveSwift: 208201d6ecc9734196d147aa76bc1f24b1b821fe
+  SwiftECP: 2d78ddf0c09307b355495fa4435ea0db3d9981fc
+  XCGLogger: 1943831ef907df55108b0b18657953f868de973b
+
+PODFILE CHECKSUM: 72fad0b7b7a7a49facc1a540d0f5dacba7f3905b
+
+COCOAPODS: 1.12.0
