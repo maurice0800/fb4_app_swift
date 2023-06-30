@@ -43,6 +43,8 @@
 		9C5593372A3DB48E0075EC8D /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5593362A3DB48E0075EC8D /* PrivacyPolicyView.swift */; };
 		9C5593392A3DBA650075EC8D /* PrivacyPolicy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C5593382A3DBA650075EC8D /* PrivacyPolicy.txt */; };
 		9C55933B2A3DC62F0075EC8D /* SendMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55933A2A3DC62F0075EC8D /* SendMailView.swift */; };
+		9C55933D2A4F1BCD0075EC8D /* SettingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55933C2A4F1BCD0075EC8D /* SettingStrings.swift */; };
+		9C55933F2A4F1D750075EC8D /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55933E2A4F1D750075EC8D /* UserDefaultsHelper.swift */; };
 		9C5AD19229D7252200617C3C /* CustomTabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AD19129D7252200617C3C /* CustomTabBarStyle.swift */; };
 		9C5AD19429D7258900617C3C /* CustomTabBarItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AD19329D7258900617C3C /* CustomTabBarItemStyle.swift */; };
 		9C5AD19729D7310F00617C3C /* Color-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AD19629D7310F00617C3C /* Color-Extensions.swift */; };
@@ -122,6 +124,8 @@
 		9C5593362A3DB48E0075EC8D /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		9C5593382A3DBA650075EC8D /* PrivacyPolicy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PrivacyPolicy.txt; sourceTree = "<group>"; };
 		9C55933A2A3DC62F0075EC8D /* SendMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailView.swift; sourceTree = "<group>"; };
+		9C55933C2A4F1BCD0075EC8D /* SettingStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStrings.swift; sourceTree = "<group>"; };
+		9C55933E2A4F1D750075EC8D /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		9C5AD19129D7252200617C3C /* CustomTabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarStyle.swift; sourceTree = "<group>"; };
 		9C5AD19329D7258900617C3C /* CustomTabBarItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemStyle.swift; sourceTree = "<group>"; };
 		9C5AD19629D7310F00617C3C /* Color-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extensions.swift"; sourceTree = "<group>"; };
@@ -336,6 +340,7 @@
 				9C6B09BD29DC52860099AC88 /* ColorPickerSheet.swift */,
 				9C6B09C129DC6DCD0099AC88 /* NavigationLazyView.swift */,
 				9C6B09C329DD66940099AC88 /* StringExtensions.swift */,
+				9C55933E2A4F1D750075EC8D /* UserDefaultsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6B09D429ED6A3B0099AC88 /* Canteens.swift */,
+				9C55933C2A4F1BCD0075EC8D /* SettingStrings.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -556,6 +562,7 @@
 				9C6B09D529ED6A3B0099AC88 /* Canteens.swift in Sources */,
 				9C518C1129C8CAE7005698F8 /* fb4app.xcdatamodeld in Sources */,
 				9C518C6429CB4D9D005698F8 /* CourseOfStudy.swift in Sources */,
+				9C55933F2A4F1D750075EC8D /* UserDefaultsHelper.swift in Sources */,
 				9C518C5029CA44D2005698F8 /* Meal.swift in Sources */,
 				9C6B09B829DB07C10099AC88 /* TabPicker.swift in Sources */,
 				9C5AD19229D7252200617C3C /* CustomTabBarStyle.swift in Sources */,
@@ -574,6 +581,7 @@
 				9C518C0E29C8CAE7005698F8 /* Persistence.swift in Sources */,
 				9C518C0729C8CAE5005698F8 /* ContentView.swift in Sources */,
 				9C518C6229CB4D93005698F8 /* CourseOfStudyStore.swift in Sources */,
+				9C55933D2A4F1BCD0075EC8D /* SettingStrings.swift in Sources */,
 				9C5593352A3DAC6F0075EC8D /* MoreListItem.swift in Sources */,
 				9C6B09CC29DD89080099AC88 /* TicketView.swift in Sources */,
 				9C6B09BA29DB7FE90099AC88 /* SearchBox.swift in Sources */,

@@ -13,9 +13,9 @@ struct SettingsView: View {
     @EnvironmentObject private var appDelegate: AppDelegate
     @Environment(\.managedObjectContext) private var context
     
-    @State var showCurrentWeekdayFirst = UserDefaults.standard.bool(forKey: "showCurrentWeekday")
-    @State var increaseBrightnessInTicket = false
-    @State var showNotificationOnNews = false
+    @State var showCurrentWeekdayFirst = UserDefaultsHelper.shared.bool(key: SettingString.showCurrentWeekday)
+    @State var increaseBrightnessInTicket = UserDefaultsHelper.shared.bool(key: .increaseBrightnessInTicket)
+    @State var showNotificationOnNews = UserDefaultsHelper.shared.bool(key: .showNotificationOnNews)
     
     @State var isPresentingConfirmDeleteSchedule = false
     @State var isPresentingConfirmDeleteTicket = false
@@ -28,8 +28,7 @@ struct SettingsView: View {
                         Text("Aktuellen Wochentag zuerst zeigen")
                     }
                     .onChange(of: showCurrentWeekdayFirst) { newValue in
-                        print(newValue)
-                        UserDefaults.standard.setValue(newValue, forKey: "showCurrentWeekday")
+                        UserDefaultsHelper.shared.set(newValue, key: .showCurrentWeekday)
                     }
                     
                     Button("Stundenplan löschen", role: .destructive) {

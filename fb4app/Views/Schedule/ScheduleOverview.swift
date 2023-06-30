@@ -71,14 +71,14 @@ struct ScheduleOverview: View {
     private var savedItems: FetchedResults<ScheduleItem>
     
     @State var displayAddSheet = false
-    @State var selectedWeekday: ScheduleWeekday = UserDefaults.standard.bool(forKey: "showCurrentWeekday") ? ScheduleWeekday.fromDate(date: Date()) : .monday
+    @State var selectedWeekday: ScheduleWeekday = UserDefaultsHelper.shared.bool(key: .showCurrentWeekday) ? ScheduleWeekday.fromDate(date: Date()) : .monday
     
     var body: some View {
         let selectedIndex: Binding<Int> = Binding(get: { ScheduleWeekday.allCases.firstIndex(of: selectedWeekday)! }, set: { newValue in
             selectedWeekday = ScheduleWeekday.allCases[newValue]
         })
         
-        NavigationView {
+        NavigationStack {
             VStack {
                 TabPicker<ScheduleWeekday>(selectedTab: $selectedWeekday, tabs: ScheduleWeekday.allCases)
                 SnapCarousel(index: selectedIndex, items: ScheduleWeekday.allCases) { weekday in

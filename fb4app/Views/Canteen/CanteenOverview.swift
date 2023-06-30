@@ -41,7 +41,7 @@ struct CanteenOverview: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
