@@ -8,56 +8,89 @@
 import SwiftUI
 
 struct CanteenCard: View {
+    @State var infoSheetVisible = false
     let meal: Meal
     var body: some View {
         VStack(alignment: .leading) {
-//            Text(canteenInfo.name)
-//                .font(.system(size: 22))
-//                .fontWeight(.bold)
-            
-//            Rectangle()
-//                .fill(Color.orange)
-//                .frame(height: 2)
-            
-//            Text("Hauptspeisen")
-//                .font(.system(size: 20))
-//                .fontWeight(.bold)
-            
                 HStack {
-                    Image(systemName: "tortoise")
-                        .padding(.leading)
+                    Image(systemName: getIcon(meal: meal))
+                        .padding(.leading, 18)
+                        .padding(.trailing, 6)
+                        .font(.system(size: 22))
                     Rectangle()
                         .fill(.orange)
                         .frame(width: 2)
                     Text(meal.title)
-                        .padding(EdgeInsets(top: 12, leading: 5, bottom: 12, trailing: 5))
-                        .font(.system(size: 14))
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 5)
+                        .font(.system(size: 16))
                     Spacer()
                 }
                 .background(Color(UIColor.tertiarySystemBackground))
-//                .overlay(RoundedRectangle(cornerRadius: 5)
-//                    .stroke(Color.orange, lineWidth: 1.5))
-        
                 .cornerRadius(5)
                 .padding(.bottom)
-            
-//            Text("Beilagen")
-//                .font(.system(size: 20))
-//                .fontWeight(.bold)
-//
-//            ForEach(canteenInfo.meals.filter({ meals in return meals.type == "Beilagen"})) { meal in
-//                Text(meal.title)
-//                    .padding(EdgeInsets(top: 4, leading: 5, bottom: 4, trailing: 5))
-//                    .font(.system(size: 14))
-//
-//                if (true) {
-//                    Rectangle()
-//                        .fill(Color.gray)
-//                        .frame(height: 0.5)
-//                }
-//            }
+                .onTapGesture {
+                    infoSheetVisible.toggle()
+                }
+                .sheet(isPresented: $infoSheetVisible) {
+                    ScrollView {
+                        VStack(alignment: .leading) {
+                            HStack(alignment: .center) {
+                                Image(systemName: getIcon(meal: meal))
+                                    .font(.system(size: 24))
+                                Text(meal.title)
+                                    .font(.system(size: 20.0))
+                                    .fontWeight(.bold)
+                                    .padding(.bottom, 12)
+                            }
+                            Text("Preise")
+                                .fontWeight(.bold)
+                            Text(String(format: "Studierende: %.2f€", meal.priceStudent))
+                            Text(String(format: "Mitarbeitende: %.2f€", meal.priceEmployee))
+                            Text(String(format: "Gäste: %.2f€", meal.priceGuests))
+                                .padding(.bottom, 12)
+                            
+                            Text("Typ")
+                                .fontWeight(.bold)
+                            Text(meal.type)
+                                .padding(.bottom, 12)
+                            
+                            Text("Zusätzliches")
+                                .fontWeight(.bold)
+                            ForEach(meal.supplies, id: \.self) { supply in
+                                Text(supply)
+                            }
+                        }
+                        .padding()
+                    }
+                    .presentationDetents([.height(370.0)])
+                }
         }
     }
+}
+
+func getIcon(meal: Meal) -> String {
+    if (meal.type.contains("Vegetarisch")) {
+        return "leaf"
+    }
+    
+    if (meal.type.contains("1")) {
+        return "1.circle"
+    }
+    
+    if (meal.type.contains("2")) {
+        return "2.circle"
+    }
+    
+    if (meal.type.contains("Tag")) {
+        return "calendar"
+    }
+    
+    if (meal.type.contains("Beilage")) {
+        return "plus";
+    }
+    
+    return "fork.knife.circle"
 }
 
 //struct CanteenCard_Previews: PreviewProvider {
