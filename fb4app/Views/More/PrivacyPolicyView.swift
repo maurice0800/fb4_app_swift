@@ -20,16 +20,18 @@ struct PrivacyPolicyView: View {
                 } else {
                     Text(.init(textContent!))
                         .padding()
-                    Button {
-                        UserDefaults.standard.set(true, forKey: "acceptedPrivacyPolicy")
-                        dismiss()
-                    } label: {
-                        Text("Akzeptieren")
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 16.0)
-                            .padding(.vertical, 8.0)
+                    if (showAcceptButton) {
+                        Button {
+                            UserDefaults.standard.set(true, forKey: "acceptedPrivacyPolicy")
+                            dismiss()
+                        } label: {
+                            Text("Akzeptieren")
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 16.0)
+                                .padding(.vertical, 8.0)
+                        }
+                        .buttonStyle(.borderedProminent)
                     }
-                    .buttonStyle(.borderedProminent)
                 }
                 
             }
