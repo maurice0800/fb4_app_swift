@@ -72,6 +72,7 @@ struct TicketView: View {
             }
             .onAppear {
                 imageIsAvailable = FileManager.default.fileExists(atPath: TicketView.ticketUrl.path())
+                TicketView.previousBrightness = UIScreen.main.brightness
             }
             .onDisappear {
                 UIScreen.main.brightness = TicketView.previousBrightness

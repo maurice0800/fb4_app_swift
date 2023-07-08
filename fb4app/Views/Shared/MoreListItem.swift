@@ -32,6 +32,7 @@ struct MoreListItem<Content: View>: View {
                 }
                 .padding()
             }
+            .buttonStyle(PlainButtonStyle())
     }
 }
 

@@ -17,9 +17,13 @@ struct MoreView: View {
             {
                 VStack(alignment: .leading) {
                     Group {
-                        MoreListItemNoLink(icon: "graduationcap", title: "Notenübersicht")
+                        MoreListItem(icon: "graduationcap", title: "Notenübersicht") {
+                            GradesView()
+                        }
                         Divider()
-                        MoreListItemNoLink(icon: "globe", title: "Links / Downloads")
+                        MoreListItem(icon: "globe", title: "Links / Downloads") {
+                            LinksView()
+                        }
                         Divider()
                         MoreListItemNoLink(icon: "envelope", title: "Feddback geben")
                             .onTapGesture {

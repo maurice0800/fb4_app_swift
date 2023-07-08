@@ -46,6 +46,8 @@
 		9C55933D2A4F1BCD0075EC8D /* SettingStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55933C2A4F1BCD0075EC8D /* SettingStrings.swift */; };
 		9C55933F2A4F1D750075EC8D /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C55933E2A4F1D750075EC8D /* UserDefaultsHelper.swift */; };
 		9C5593412A4F2DB80075EC8D /* ScheduleWeekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5593402A4F2DB80075EC8D /* ScheduleWeekday.swift */; };
+		9C5593432A5968490075EC8D /* LinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5593422A5968490075EC8D /* LinksView.swift */; };
+		9C5593452A596A2F0075EC8D /* GradesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5593442A596A2F0075EC8D /* GradesView.swift */; };
 		9C5AD19229D7252200617C3C /* CustomTabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AD19129D7252200617C3C /* CustomTabBarStyle.swift */; };
 		9C5AD19429D7258900617C3C /* CustomTabBarItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AD19329D7258900617C3C /* CustomTabBarItemStyle.swift */; };
 		9C5AD19729D7310F00617C3C /* Color-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5AD19629D7310F00617C3C /* Color-Extensions.swift */; };
@@ -128,6 +130,8 @@
 		9C55933C2A4F1BCD0075EC8D /* SettingStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingStrings.swift; sourceTree = "<group>"; };
 		9C55933E2A4F1D750075EC8D /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		9C5593402A4F2DB80075EC8D /* ScheduleWeekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWeekday.swift; sourceTree = "<group>"; };
+		9C5593422A5968490075EC8D /* LinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksView.swift; sourceTree = "<group>"; };
+		9C5593442A596A2F0075EC8D /* GradesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesView.swift; sourceTree = "<group>"; };
 		9C5AD19129D7252200617C3C /* CustomTabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarStyle.swift; sourceTree = "<group>"; };
 		9C5AD19329D7258900617C3C /* CustomTabBarItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemStyle.swift; sourceTree = "<group>"; };
 		9C5AD19629D7310F00617C3C /* Color-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extensions.swift"; sourceTree = "<group>"; };
@@ -393,6 +397,8 @@
 				9C866C9F2A33362C002996F5 /* SettingsView.swift */,
 				9C5593322A34B8160075EC8D /* MoreView.swift */,
 				9C5593362A3DB48E0075EC8D /* PrivacyPolicyView.swift */,
+				9C5593422A5968490075EC8D /* LinksView.swift */,
+				9C5593442A596A2F0075EC8D /* GradesView.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -584,6 +590,8 @@
 				9C518C4629CA28AF005698F8 /* NewsStore.swift in Sources */,
 				9C518C0E29C8CAE7005698F8 /* Persistence.swift in Sources */,
 				9C518C0729C8CAE5005698F8 /* ContentView.swift in Sources */,
+				9C5593452A596A2F0075EC8D /* GradesView.swift in Sources */,
+				9C5593432A5968490075EC8D /* LinksView.swift in Sources */,
 				9C518C6229CB4D93005698F8 /* CourseOfStudyStore.swift in Sources */,
 				9C55933D2A4F1BCD0075EC8D /* SettingStrings.swift in Sources */,
 				9C5593352A3DAC6F0075EC8D /* MoreListItem.swift in Sources */,
@@ -751,7 +759,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fb4app/fb4app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.0.202306211055;
+				CURRENT_PROJECT_VERSION = 2.0.0.202307071010;
 				DEVELOPMENT_ASSET_PATHS = "\"fb4app/Preview Content\"";
 				DEVELOPMENT_TEAM = 72GC79D8HA;
 				ENABLE_PREVIEWS = YES;
@@ -784,7 +792,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fb4app/fb4app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.0.202306211055;
+				CURRENT_PROJECT_VERSION = 2.0.0.202307071010;
 				DEVELOPMENT_ASSET_PATHS = "\"fb4app/Preview Content\"";
 				DEVELOPMENT_TEAM = 72GC79D8HA;
 				ENABLE_PREVIEWS = YES;
