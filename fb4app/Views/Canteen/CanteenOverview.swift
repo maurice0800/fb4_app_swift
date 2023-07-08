@@ -159,7 +159,7 @@ struct CanteenOverview: View {
                                         .padding([.leading, .trailing])
                                     }
                                     .refreshable {
-                                        getMealsForDate(date: weekDays[selectedPage])
+                                        getMealsForDate(date: weekDays[selectedPage], forceRefresh: true)
                                     }
                                 }
                             }
@@ -182,12 +182,12 @@ struct CanteenOverview: View {
         }
     }
     
-    func getMealsForDate(date: Date) {
+    func getMealsForDate(date: Date, forceRefresh: Bool = false) {
         let dateFormatter = DateFormatter()
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        store.getMealsForDay(dayString: dateFormatter.string(from: date), canteen: selectedCanteen) { meals in
+        store.getMealsForDay(dayString: dateFormatter.string(from: date), canteen: selectedCanteen, forceRefresh: forceRefresh) { meals in
             let targetItem = infoForDate.firstIndex { info in
                 info.date == date
             }!
