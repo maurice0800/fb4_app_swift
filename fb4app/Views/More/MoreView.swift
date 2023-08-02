@@ -27,7 +27,7 @@ struct MoreView: View {
                         Divider()
                         MoreListItemNoLink(icon: "envelope", title: "Feddback geben")
                             .onTapGesture {
-                                if let url = URL(string: "mailto:abc@abc.abc") {
+                                if let url = URL(string: "mailto:fb4app@hemacode.de") {
                                      UIApplication.shared.open(url, options: [:], completionHandler: nil)
                                 }
                             }
