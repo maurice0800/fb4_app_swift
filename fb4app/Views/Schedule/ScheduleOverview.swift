@@ -57,7 +57,7 @@ struct ScheduleOverview: View {
             .navigationTitle("Stundenplan")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $displayAddSheet) {
-                AddOfficialSchedulePage()
+                AddSchedulePage()
                     .environment(\.dismissSheet, { displayAddSheet = false })
             }
             .onAppear {

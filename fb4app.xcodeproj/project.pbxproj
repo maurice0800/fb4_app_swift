@@ -35,7 +35,7 @@
 		9C518C6029CB4D3F005698F8 /* ScheduleOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C518C5F29CB4D3F005698F8 /* ScheduleOverview.swift */; };
 		9C518C6229CB4D93005698F8 /* CourseOfStudyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C518C6129CB4D93005698F8 /* CourseOfStudyStore.swift */; };
 		9C518C6429CB4D9D005698F8 /* CourseOfStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C518C6329CB4D9D005698F8 /* CourseOfStudy.swift */; };
-		9C518C6629CB54A9005698F8 /* AddOfficialSchedulePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C518C6529CB54A9005698F8 /* AddOfficialSchedulePage.swift */; };
+		9C518C6629CB54A9005698F8 /* AddSchedulePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C518C6529CB54A9005698F8 /* AddSchedulePage.swift */; };
 		9C518C6829CBB5BD005698F8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C518C6729CBB5BD005698F8 /* MainView.swift */; };
 		9C518C6B29CBC297005698F8 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = 9C518C6A29CBC297005698F8 /* TabBar */; };
 		9C5593332A34B8160075EC8D /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5593322A34B8160075EC8D /* MoreView.swift */; };
@@ -119,7 +119,7 @@
 		9C518C5F29CB4D3F005698F8 /* ScheduleOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleOverview.swift; sourceTree = "<group>"; };
 		9C518C6129CB4D93005698F8 /* CourseOfStudyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOfStudyStore.swift; sourceTree = "<group>"; };
 		9C518C6329CB4D9D005698F8 /* CourseOfStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOfStudy.swift; sourceTree = "<group>"; };
-		9C518C6529CB54A9005698F8 /* AddOfficialSchedulePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOfficialSchedulePage.swift; sourceTree = "<group>"; };
+		9C518C6529CB54A9005698F8 /* AddSchedulePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchedulePage.swift; sourceTree = "<group>"; };
 		9C518C6729CBB5BD005698F8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9C5593312A3380E40075EC8D /* fb4app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fb4app.entitlements; sourceTree = "<group>"; };
 		9C5593322A34B8160075EC8D /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
@@ -320,7 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				9C518C5F29CB4D3F005698F8 /* ScheduleOverview.swift */,
-				9C518C6529CB54A9005698F8 /* AddOfficialSchedulePage.swift */,
+				9C518C6529CB54A9005698F8 /* AddSchedulePage.swift */,
 				9C6B09BB29DC4ACC0099AC88 /* ScheduleCard.swift */,
 				9C6B09BF29DC69610099AC88 /* SelectScheduleItems.swift */,
 				9C6B09CF29EC095F0099AC88 /* AddOfficialScheduleForm.swift */,
@@ -578,7 +578,7 @@
 				9C5AD19229D7252200617C3C /* CustomTabBarStyle.swift in Sources */,
 				9C6B09C429DD66940099AC88 /* StringExtensions.swift in Sources */,
 				9C518C5229CA4526005698F8 /* CanteenOverview.swift in Sources */,
-				9C518C6629CB54A9005698F8 /* AddOfficialSchedulePage.swift in Sources */,
+				9C518C6629CB54A9005698F8 /* AddSchedulePage.swift in Sources */,
 				9C518C4B29CA3370005698F8 /* NewsCard.swift in Sources */,
 				9C518C4D29CA3B7B005698F8 /* NewsSheet.swift in Sources */,
 				9C5AD19929D98ABE00617C3C /* Date-Extensions.swift in Sources */,
@@ -759,7 +759,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fb4app/fb4app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.0.202307071010;
+				CURRENT_PROJECT_VERSION = 2.0.0.202307081204;
 				DEVELOPMENT_ASSET_PATHS = "\"fb4app/Preview Content\"";
 				DEVELOPMENT_TEAM = 72GC79D8HA;
 				ENABLE_PREVIEWS = YES;
@@ -792,7 +792,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fb4app/fb4app.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.0.202307071010;
+				CURRENT_PROJECT_VERSION = 2.0.0.202307081204;
 				DEVELOPMENT_ASSET_PATHS = "\"fb4app/Preview Content\"";
 				DEVELOPMENT_TEAM = 72GC79D8HA;
 				ENABLE_PREVIEWS = YES;

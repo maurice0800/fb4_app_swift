@@ -21,7 +21,7 @@ enum EntryType : Int, CaseIterable {
     }
 }
 
-struct AddOfficialSchedulePage: View {
+struct AddSchedulePage: View {
     @Environment(\.dismiss) var dismiss
     @State var selectedType: EntryType = .official
     
@@ -43,7 +43,7 @@ struct AddOfficialSchedulePage: View {
                     }
                 }
             }
-            .navigationBarTitle("Neuer offizieller Stundenplan")
+            .navigationBarTitle(selectedType == .official ? "Neuer offizieller Stundenplan" : "Neuer benutzerdefinierter Eintrag")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
@@ -51,6 +51,6 @@ struct AddOfficialSchedulePage: View {
 
 struct AddOfficialSchedulePage_Previews: PreviewProvider {
     static var previews: some View {
-        AddOfficialSchedulePage()
+        AddSchedulePage()
     }
 }
